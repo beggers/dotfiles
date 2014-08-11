@@ -101,3 +101,6 @@ function mandelbrot {
 export GOPATH=$HOME/Documents/go
 export GOBIN=$GOPATH/bin
 export PATH=~/.cabal/bin:$PATH:$GOBIN
+
+python ~/.archey.py
+setxkbmap dvorak
