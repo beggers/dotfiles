@@ -36,6 +36,10 @@ alias open='xdg-open'
 
 alias grep='grep --color=auto'
 
+# Use the autocolor script (homework 3 from CSE 455) to color the image all
+# cool, and put the output image into ~/Pictures/color
+alias color='~/./.smart_color.sh'
+
 # java stuff
 alias javac='javac -Xlint -g'
 alias junitc='javac -cp .:/usr/share/java/junit.jar'
