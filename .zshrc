@@ -28,11 +28,10 @@ zsh-mime-setup
 alias ...='cd ../..'
 
 # Other aliases
-alias ls='ls -h --color=auto'
+alias ls='ls -h'
 alias ll='ls -lA'
 alias la='ls -A'
 alias l='ls -CF'
-alias open='xdg-open'
 
 alias grep='grep --color=auto'
 
@@ -102,9 +101,11 @@ function mandelbrot {
     done
 }
 
-export GOPATH=$HOME/Documents/go
-export GOBIN=$GOPATH/bin
-export PATH=~/.cabal/bin:$PATH:$GOBIN
+export PATH=/usr/local/bin:$PATH
+export GOPATH=$HOME/code/go
 
-python ~/.archey.py
-setxkbmap dvorak
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/beneggers/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/beneggers/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/beneggers/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/beneggers/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
